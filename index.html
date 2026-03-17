@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zu</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+      font-family: "Georgia", serif;
+      padding: 80px 60px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 24px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    li a {
+      font-size: 1.1rem;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+      padding-bottom: 1px;
+      transition: opacity 0.15s ease;
+    }
+
+    li a:hover {
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zu</h1>
+  <p class="section-label">Things I like</p>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Kafka_on_the_Shore" target="_blank">Haruki Murakami's book Kafka on the Shore</a></li>
+    <li><a href="https://www.youtube.com/watch?v=YphyYjhSeRM" target="_blank">Superpower Showdown: Grandpa Edition! (YouTube animation, flashing colors wanring)</a></li>
+    <li><a href="https://sunlit.place" target="_blank">Choe Yan's Sunlit Place</a></li>
+    <li><a href="https://open.spotify.com/album/4Hjqdhj5rh816i1dfcUEaM" target="_blank">Porter Robinson's album, Nurture</a></li>
+    <li><a href="https://www.napajapan.com/products/look-chocolate-premium-shine-muscat-grape" target="_blank">Japanese Look green grape chocolate</a></li>
+    <li><a href="https://kettl.co/products/kettl-matcha-chocolate" target="_blank">Kettl Green Tea Chocolate</a></li>
+    <li><a href="https://www.ubereats.com/store/oasis-cafe-flushing/EntBd9Q_QIWnN-1_6n2hYw" target="_blank">NYC Oasis Cafe Minimal Ferro Style Chocolate Cake</a></li>
+  </ul>
+
+  <script>
+    // Email assembled at runtime to avoid bot scraping
+    const u = 'zupeaceful';
+    const d = 'gmail' + '.' + 'com';
+    const link = document.createElement('a');
+    link.href = 'mai' + 'lto:' + u + '@' + d;
+    link.textContent = 'contact me';
+    link.style.cssText = 'display:inline-block;margin-top:40px;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#999;text-decoration:none;transition:opacity 0.15s ease;';
+    link.onmouseover = () => link.style.opacity = '0.4';
+    link.onmouseout = () => link.style.opacity = '1';
+    document.body.appendChild(link);
+  </script>
+</body>
+</html>
